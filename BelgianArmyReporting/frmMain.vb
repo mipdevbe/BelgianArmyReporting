@@ -22,6 +22,7 @@ Public Class frmMain
         ' Bind Value to the current soldier's DateOfBirth so changes update the DataSet automatically
         dtpDateOfBirth.DataBindings.Clear()
         dtpDateOfBirth.DataBindings.Add("Value", Me.SoldiersBindingSource, "DateOfBirth", True, DataSourceUpdateMode.OnPropertyChanged)
+
     End Sub
 
     ' Example: persist changes to database (call when saving)
@@ -29,5 +30,30 @@ Public Class frmMain
         Me.Validate()
         Me.SoldiersBindingSource.EndEdit()
         Me.SoldiersTableAdapter1.Update(Me.SoldierDataSet1.Soldiers)
+    End Sub
+
+    Private Sub dgvSoldiers_DataBindingComplete(sender As Object, e As DataGridViewBindingCompleteEventArgs) Handles dgvSoldiers.DataBindingComplete
+        ' Apply a GradeId lookup to the DataGridView so it shows grade names instead of IDs
+
+        If dgvSoldiers.Columns.Contains("GradeIdDataGridViewTextBoxColumn") Then
+            Dim gradeCol As DataGridViewTextBoxColumn = dgvSoldiers.Columns("GradeIdDataGridViewTextBoxColumn")
+
+            dgvSoldiers.Columns.RemoveAt(gradeCol.Index)
+
+            If Not dgvSoldiers.Columns.Contains("GradeComboColumn") Then
+                ' Create a new combo column for grades
+                Dim col As New DataGridViewComboBoxColumn With {
+                    .DataPropertyName = "GradeId",   ' links to ds1
+                    .DataSource = Me.GradeDataSet1.Grades,  ' lookup table
+                    .ValueMember = "Id",
+                    .DisplayMember = "Name",
+                    .HeaderText = "Grade",
+                    .Name = "GradeComboColumn"
+                }
+
+                dgvSoldiers.Columns.Insert(gradeCol.Index - 1, col)
+            End If
+        End If
+
     End Sub
 End Class
