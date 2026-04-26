@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmMain
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.btnAddNew = New System.Windows.Forms.ToolStripButton()
@@ -35,29 +35,29 @@ Partial Class frmMain
         Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
         Me.dgvSoldiers = New System.Windows.Forms.DataGridView()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtRegUser = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtRegDate = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.txtRegTime = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtRegDate = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtRegUser = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.txtId = New System.Windows.Forms.TextBox()
-        Me.txtFirstName = New System.Windows.Forms.TextBox()
-        Me.txtLastName = New System.Windows.Forms.TextBox()
-        Me.txtMobile = New System.Windows.Forms.TextBox()
-        Me.txtEmail = New System.Windows.Forms.TextBox()
-        Me.txtAddress = New System.Windows.Forms.TextBox()
-        Me.cmbGrade = New System.Windows.Forms.ComboBox()
         Me.dtpDateOfBirth = New System.Windows.Forms.DateTimePicker()
+        Me.cmbGrade = New System.Windows.Forms.ComboBox()
+        Me.txtAddress = New System.Windows.Forms.TextBox()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
+        Me.txtMobile = New System.Windows.Forms.TextBox()
+        Me.txtLastName = New System.Windows.Forms.TextBox()
+        Me.txtFirstName = New System.Windows.Forms.TextBox()
+        Me.txtId = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.dgvSoldiers, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -174,39 +174,13 @@ Partial Class frmMain
         Me.Panel1.Size = New System.Drawing.Size(842, 50)
         Me.Panel1.TabIndex = 3
         '
-        'Label4
+        'txtRegTime
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(12, 16)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(47, 20)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "User:"
-        '
-        'txtRegUser
-        '
-        Me.txtRegUser.Location = New System.Drawing.Point(76, 13)
-        Me.txtRegUser.Name = "txtRegUser"
-        Me.txtRegUser.ReadOnly = True
-        Me.txtRegUser.Size = New System.Drawing.Size(130, 26)
-        Me.txtRegUser.TabIndex = 1
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(333, 19)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(48, 20)
-        Me.Label5.TabIndex = 0
-        Me.Label5.Text = "Date:"
-        '
-        'txtRegDate
-        '
-        Me.txtRegDate.Location = New System.Drawing.Point(397, 16)
-        Me.txtRegDate.Name = "txtRegDate"
-        Me.txtRegDate.ReadOnly = True
-        Me.txtRegDate.Size = New System.Drawing.Size(130, 26)
-        Me.txtRegDate.TabIndex = 1
+        Me.txtRegTime.Location = New System.Drawing.Point(700, 16)
+        Me.txtRegTime.Name = "txtRegTime"
+        Me.txtRegTime.ReadOnly = True
+        Me.txtRegTime.Size = New System.Drawing.Size(130, 26)
+        Me.txtRegTime.TabIndex = 1
         '
         'Label6
         '
@@ -217,13 +191,39 @@ Partial Class frmMain
         Me.Label6.TabIndex = 0
         Me.Label6.Text = "Time:"
         '
-        'txtRegTime
+        'txtRegDate
         '
-        Me.txtRegTime.Location = New System.Drawing.Point(700, 16)
-        Me.txtRegTime.Name = "txtRegTime"
-        Me.txtRegTime.ReadOnly = True
-        Me.txtRegTime.Size = New System.Drawing.Size(130, 26)
-        Me.txtRegTime.TabIndex = 1
+        Me.txtRegDate.Location = New System.Drawing.Point(397, 16)
+        Me.txtRegDate.Name = "txtRegDate"
+        Me.txtRegDate.ReadOnly = True
+        Me.txtRegDate.Size = New System.Drawing.Size(130, 26)
+        Me.txtRegDate.TabIndex = 1
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(333, 19)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(48, 20)
+        Me.Label5.TabIndex = 0
+        Me.Label5.Text = "Date:"
+        '
+        'txtRegUser
+        '
+        Me.txtRegUser.Location = New System.Drawing.Point(76, 13)
+        Me.txtRegUser.Name = "txtRegUser"
+        Me.txtRegUser.ReadOnly = True
+        Me.txtRegUser.Size = New System.Drawing.Size(130, 26)
+        Me.txtRegUser.TabIndex = 1
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(12, 16)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(47, 20)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "User:"
         '
         'Label1
         '
@@ -290,35 +290,64 @@ Partial Class frmMain
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Details"
         '
-        'Label8
+        'dtpDateOfBirth
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(82, 173)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(106, 20)
-        Me.Label8.TabIndex = 1
-        Me.Label8.Text = "Date Of Birth:"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.dtpDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpDateOfBirth.Location = New System.Drawing.Point(202, 170)
+        Me.dtpDateOfBirth.Name = "dtpDateOfBirth"
+        Me.dtpDateOfBirth.Size = New System.Drawing.Size(399, 26)
+        Me.dtpDateOfBirth.TabIndex = 5
         '
-        'Label9
+        'cmbGrade
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(82, 205)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(59, 20)
-        Me.Label9.TabIndex = 1
-        Me.Label9.Text = "Mobile:"
-        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.cmbGrade.FormattingEnabled = True
+        Me.cmbGrade.Location = New System.Drawing.Point(202, 136)
+        Me.cmbGrade.Name = "cmbGrade"
+        Me.cmbGrade.Size = New System.Drawing.Size(395, 28)
+        Me.cmbGrade.TabIndex = 4
         '
-        'Label10
+        'txtAddress
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(82, 242)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(52, 20)
-        Me.Label10.TabIndex = 1
-        Me.Label10.Text = "Email:"
-        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.txtAddress.Location = New System.Drawing.Point(202, 272)
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.Size = New System.Drawing.Size(476, 26)
+        Me.txtAddress.TabIndex = 3
+        '
+        'txtEmail
+        '
+        Me.txtEmail.Location = New System.Drawing.Point(202, 239)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(397, 26)
+        Me.txtEmail.TabIndex = 3
+        '
+        'txtMobile
+        '
+        Me.txtMobile.Location = New System.Drawing.Point(202, 202)
+        Me.txtMobile.Name = "txtMobile"
+        Me.txtMobile.Size = New System.Drawing.Size(397, 26)
+        Me.txtMobile.TabIndex = 3
+        '
+        'txtLastName
+        '
+        Me.txtLastName.Location = New System.Drawing.Point(202, 101)
+        Me.txtLastName.Name = "txtLastName"
+        Me.txtLastName.Size = New System.Drawing.Size(397, 26)
+        Me.txtLastName.TabIndex = 3
+        '
+        'txtFirstName
+        '
+        Me.txtFirstName.Location = New System.Drawing.Point(202, 69)
+        Me.txtFirstName.Name = "txtFirstName"
+        Me.txtFirstName.Size = New System.Drawing.Size(397, 26)
+        Me.txtFirstName.TabIndex = 3
+        '
+        'txtId
+        '
+        Me.txtId.Location = New System.Drawing.Point(202, 33)
+        Me.txtId.Name = "txtId"
+        Me.txtId.ReadOnly = True
+        Me.txtId.Size = New System.Drawing.Size(397, 26)
+        Me.txtId.TabIndex = 2
         '
         'Label11
         '
@@ -330,64 +359,35 @@ Partial Class frmMain
         Me.Label11.Text = "Address:"
         Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'txtId
+        'Label10
         '
-        Me.txtId.Location = New System.Drawing.Point(202, 33)
-        Me.txtId.Name = "txtId"
-        Me.txtId.ReadOnly = True
-        Me.txtId.Size = New System.Drawing.Size(397, 26)
-        Me.txtId.TabIndex = 2
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(82, 242)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(52, 20)
+        Me.Label10.TabIndex = 1
+        Me.Label10.Text = "Email:"
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'txtFirstName
+        'Label9
         '
-        Me.txtFirstName.Location = New System.Drawing.Point(202, 69)
-        Me.txtFirstName.Name = "txtFirstName"
-        Me.txtFirstName.Size = New System.Drawing.Size(397, 26)
-        Me.txtFirstName.TabIndex = 3
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(82, 205)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(59, 20)
+        Me.Label9.TabIndex = 1
+        Me.Label9.Text = "Mobile:"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'txtLastName
+        'Label8
         '
-        Me.txtLastName.Location = New System.Drawing.Point(202, 101)
-        Me.txtLastName.Name = "txtLastName"
-        Me.txtLastName.Size = New System.Drawing.Size(397, 26)
-        Me.txtLastName.TabIndex = 3
-        '
-        'txtMobile
-        '
-        Me.txtMobile.Location = New System.Drawing.Point(202, 202)
-        Me.txtMobile.Name = "txtMobile"
-        Me.txtMobile.Size = New System.Drawing.Size(397, 26)
-        Me.txtMobile.TabIndex = 3
-        '
-        'txtEmail
-        '
-        Me.txtEmail.Location = New System.Drawing.Point(202, 239)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(397, 26)
-        Me.txtEmail.TabIndex = 3
-        '
-        'txtAddress
-        '
-        Me.txtAddress.Location = New System.Drawing.Point(202, 272)
-        Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(476, 26)
-        Me.txtAddress.TabIndex = 3
-        '
-        'cmbGrade
-        '
-        Me.cmbGrade.FormattingEnabled = True
-        Me.cmbGrade.Location = New System.Drawing.Point(202, 136)
-        Me.cmbGrade.Name = "cmbGrade"
-        Me.cmbGrade.Size = New System.Drawing.Size(395, 28)
-        Me.cmbGrade.TabIndex = 4
-        '
-        'dtpDateOfBirth
-        '
-        Me.dtpDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpDateOfBirth.Location = New System.Drawing.Point(202, 170)
-        Me.dtpDateOfBirth.Name = "dtpDateOfBirth"
-        Me.dtpDateOfBirth.Size = New System.Drawing.Size(399, 26)
-        Me.dtpDateOfBirth.TabIndex = 5
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(82, 173)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(106, 20)
+        Me.Label8.TabIndex = 1
+        Me.Label8.Text = "Date Of Birth:"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'frmMain
         '
