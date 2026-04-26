@@ -76,6 +76,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ds\GradeDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GradeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ds\SoldierDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoldierDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.Designer.vb">
       <DependentUpon>frmMain.vb</DependentUpon>
     </Compile>
@@ -111,6 +121,28 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Ds\GradeDataSet.xsc">
+      <DependentUpon>GradeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Ds\GradeDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GradeDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Ds\GradeDataSet.xss">
+      <DependentUpon>GradeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Ds\SoldierDataSet.xsc">
+      <DependentUpon>SoldierDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Ds\SoldierDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoldierDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Ds\SoldierDataSet.xss">
+      <DependentUpon>SoldierDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -138,8 +170,6 @@
   <ItemGroup>
     <None Include="Resources\canecl_butt.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Ds\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
