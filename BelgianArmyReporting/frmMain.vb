@@ -30,4 +30,43 @@ Public Class frmMain
         Me.SoldiersBindingSource.EndEdit()
         Me.SoldiersTableAdapter1.Update(Me.SoldierDataSet1.Soldiers)
     End Sub
+
+    Private Sub btnReport_Click(sender As Object, e As EventArgs) Handles btnReport.Click
+        Dim frm As New frmReport
+
+
+        frm.ShowDialog(Me)
+    End Sub
+
+    Private Sub dgvSoldiers_DataBindingComplete(sender As Object, e As DataGridViewBindingCompleteEventArgs) Handles dgvSoldiers.DataBindingComplete
+
+        Dim targetColumnName As String = "GradeIdDataGridViewTextBoxColumn"
+
+        If dgvSoldiers.Columns.Contains(targetColumnName) Then
+            Dim colToReplace As DataGridViewColumn = dgvSoldiers.Columns(targetColumnName)
+            dgvSoldiers.Columns.Remove(targetColumnName)
+
+            Dim targetNewColumnName As String = "GradeDataGridViewTextBoxColumn"
+
+            If Not dgvSoldiers.Columns.Contains(targetNewColumnName) Then
+                Dim col As New DataGridViewComboBoxColumn With {
+                .DataPropertyName = "gradeId",   ' links to ds1
+                .DataSource = GradeDataSet1.Tables(0),     ' lookup table
+                .ValueMember = "id",
+                .DisplayMember = "name",
+                .HeaderText = "Grade",
+                .Name = targetNewColumnName
+            }
+
+                If (colToReplace.Index - 1 >= 0) Then
+                    dgvSoldiers.Columns.Insert(colToReplace.Index - 1, col)
+                Else
+                    dgvSoldiers.Columns.Add(col)
+                End If
+            End If
+
+
+        End If
+
+    End Sub
 End Class

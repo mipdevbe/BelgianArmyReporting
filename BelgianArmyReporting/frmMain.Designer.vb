@@ -31,8 +31,10 @@ Partial Class frmMain
         Me.btnDelete = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.btnSave = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
-        Me.btnCancel = New System.Windows.Forms.ToolStripButton()
+        Me.btnReport = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
         Me.dgvSoldiers = New System.Windows.Forms.DataGridView()
         Me.IdDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -91,7 +93,7 @@ Partial Class frmMain
         '
         Me.ToolStrip1.AutoSize = False
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnAddNew, Me.ToolStripSeparator1, Me.btnEdit, Me.ToolStripSeparator2, Me.btnDelete, Me.ToolStripSeparator3, Me.btnSave, Me.ToolStripSeparator4, Me.btnCancel, Me.ToolStripSeparator5})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnAddNew, Me.ToolStripSeparator1, Me.btnEdit, Me.ToolStripSeparator2, Me.btnDelete, Me.ToolStripSeparator3, Me.btnSave, Me.ToolStripSeparator6, Me.ToolStripButton1, Me.ToolStripSeparator4, Me.btnReport, Me.ToolStripSeparator5})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(1097, 71)
@@ -153,20 +155,35 @@ Partial Class frmMain
         Me.btnSave.Text = "Save"
         Me.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
+        'ToolStripSeparator6
+        '
+        Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
+        Me.ToolStripSeparator6.Size = New System.Drawing.Size(6, 71)
+        '
+        'ToolStripButton1
+        '
+        Me.ToolStripButton1.AutoSize = False
+        Me.ToolStripButton1.Image = Global.BelgianArmyReporting.My.Resources.Resources.canecl_butt
+        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton1.Name = "ToolStripButton1"
+        Me.ToolStripButton1.Size = New System.Drawing.Size(110, 65)
+        Me.ToolStripButton1.Text = "Cancel"
+        Me.ToolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
         Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 71)
         '
-        'btnCancel
+        'btnReport
         '
-        Me.btnCancel.AutoSize = False
-        Me.btnCancel.Image = Global.BelgianArmyReporting.My.Resources.Resources.canecl_butt
-        Me.btnCancel.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(110, 65)
-        Me.btnCancel.Text = "Cancel"
-        Me.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnReport.AutoSize = False
+        Me.btnReport.Image = Global.BelgianArmyReporting.My.Resources.Resources.report
+        Me.btnReport.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnReport.Name = "btnReport"
+        Me.btnReport.Size = New System.Drawing.Size(110, 65)
+        Me.btnReport.Text = "Report"
+        Me.btnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'ToolStripSeparator5
         '
@@ -598,7 +615,7 @@ Partial Class frmMain
     Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
     Friend WithEvents btnSave As ToolStripButton
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
-    Friend WithEvents btnCancel As ToolStripButton
+    Friend WithEvents btnReport As ToolStripButton
     Friend WithEvents ToolStripSeparator5 As ToolStripSeparator
     Friend WithEvents dgvSoldiers As DataGridView
     Friend WithEvents Panel1 As Panel
@@ -643,4 +660,6 @@ Partial Class frmMain
     Friend WithEvents RegistrationNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents RegistrationDateDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents RegistrationTimeDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents ToolStripSeparator6 As ToolStripSeparator
+    Friend WithEvents ToolStripButton1 As ToolStripButton
 End Class
