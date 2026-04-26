@@ -1,3 +1,3 @@
 # Belgian Army Reporting
 
-![Alt Text](database=design.jpeg)
+![Alt Text](database-design.png)
