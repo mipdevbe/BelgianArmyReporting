@@ -22,6 +22,7 @@ Public Class frmMain
         ' Bind Value to the current soldier's DateOfBirth so changes update the DataSet automatically
         dtpDateOfBirth.DataBindings.Clear()
         dtpDateOfBirth.DataBindings.Add("Value", Me.SoldiersBindingSource, "DateOfBirth", True, DataSourceUpdateMode.OnPropertyChanged)
+
     End Sub
 
     ' Example: persist changes to database (call when saving)
